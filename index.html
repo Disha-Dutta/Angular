@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body ng-app="myApp" ng-controller="myCtrl">
+
+<div>
+
+ <h4>InstantPost Ajax Assignement:</h4>
+
+ <label for="msg">Write here:</label>
+ <input id="msg" name="name" type="text">
+ <button class="w3-button w3-round w3-blue">Submit</button>
+
+ <div ng-repeat="x in data | orderBy: reverse:true">
+  <div class="w3-panel w3-card "><p>{{x.id}}	{{x.data}}</p>
+  </div>
+ </div>
+
+
+</div>
+
+</body>
+</html>
